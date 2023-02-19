@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rserver une table</title>
+  <link rel="stylesheet" type="text/css" href="C:\Users\darck\Desktop\Code ECF 2023\style.css">git r
+  <!--script button-->
+  <script>
+    const buttons = document.querySelectorAll('input[name="midi"]'||'input[name="soir"]');
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+    buttons.forEach(btn => btn.classList.remove('selected'));
+    this.classList.add('selected');
+  });
+});
+  </script>
+</head>
+
+<body>
+    <nav>
+      <ul>
+        <li><a href="C:\Users\darck\Desktop\Code ECF 2023\Html\accueil.html">Accueil<a/></li>
+        <li><a href="C:\Users\darck\Desktop\Code ECF 2023\Html\carte.html">Menu<a/></li>
+      </ul>
+    </nav>
+    <header>
+        <h2>Réserver une table</h1>
+    </header>
+    <body>
+        <form>
+          <label for="nb_personnes">Nombre de personnes :</label>
+          <select name="nb_personnes" id="nb_personnes">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+          </select>
+
+          <label for="date">Date :</label>
+  <input type="date" id="date" name="date">
+
+        <h3>Horaires du midi :</h3>
+
+      <div>
+        <input type="button" id="midi-12h" name="midi" value="12h">
+        <input type="button" id="midi-12h15" name="midi" value="12h15">
+        <input type="button" id="midi-12h30" name="midi" value="12h30">
+        <input type="button" id="midi-12h45" name="midi" value="12h45">
+        <input type="button" id="midi-13h" name="midi" value="13h">
+        <input type="button" id="midi-13h15" name="midi" value="13h15">
+        <input type="button" id="midi-13h30" name="midi" value="13h30">
+        <input type="button" id="midi-13h45" name="midi" value="13h45">
+        <input type="button" id="midi-14h" name="midi" value="14h">
+      </div>
+
+        <h3>Horaires du soir :</h3>
+
+      <div>
+        <input type="button" id="soir-19h" name="soir" value="19h">
+        <input type="button" id="soir-19h15" name="soir" value="19h15">
+        <input type="button" id="soir-19h30" name="soir" value="19h30">
+        <input type="button" id="soir-19h45" name="soir" value="19h45">
+        <input type="button" id="soir-20h" name="soir" value="20h">
+        <input type="button" id="soir-20h15" name="soir" value="20h15">
+        <input type="button" id="soir-20h30" name="soir" value="20h30">
+        <input type="button" id="soir-20h45" name="soir" value="20h45">
+        <input type="button" id="soir-21h" name="soir" value="21h">
+        <input type="button" id="soir-21h15" name="soir" value="21h15">
+        <input type="button" id="soir-21h30" name="soir" value="21h30">
+    
+      </div>
+    
+      <div>
+        <button type="submit">Réserver</button>
+      </div>
+          
+
+        </form>
+    <footer>
+        <p>2023 Le Quai Antique - Restaurant</p>
+      </footer>
+</body>
+
+</html>
